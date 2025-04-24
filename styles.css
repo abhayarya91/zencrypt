@@ -1,0 +1,132 @@
+/* styles.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #000000, #003366);
+  color: #dcdcdc;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== Login Page Styling ===== */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: fadeIn 1s ease-in-out;
+}
+
+form {
+  background: #1c1c1c;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.4);
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+form h2 {
+  color: #00ffcc;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: #333;
+  color: #fff;
+}
+
+button {
+  padding: 10px;
+  background: #00ffcc;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #00ccaa;
+}
+
+/* ===== Portfolio Styling ===== */
+.container, .portfolio-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background: linear-gradient(135deg, #000000, #003366);
+  color: #00ffcc;
+  padding: 60px 0;
+  text-align: center;
+  border-bottom: 3px solid #00ffcc;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #00ffcc;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px #00ffcc;
+}
+
+section {
+  background: #1c1c1c;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 255, 204, 0.2);
+}
+
+h1, h2 {
+  color: #00ffcc;
+}
+
+a {
+  color: #66ffe3;
+  text-decoration: none;
+}
+
+a[target="_blank"] {
+  color: #3399ff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+footer {
+  background: linear-gradient(135deg, #000000, #003366);
+  color: #00ffcc;
+  text-align: center;
+  padding: 30px 0;
+  border-top: 2px solid #00ffcc;
+  margin-top: auto;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
